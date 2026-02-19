@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="content.css">
+</head>
+<body>
+
+    <!-- Categories List -->
+    <section class="categories">
+        <h2>Book Categories</h2>
+        <ul>
+            <li>Fiction</li>
+            <li>Non-Fiction</li>
+            <li>Science</li>
+            <li>Technology</li>
+            <li>Children</li>
+        </ul>
+    </section>
+
+    <!-- Books Table -->
+    <section class="books">
+        <h2>Available Books</h2>
+        <table>
+            <tr>
+                <th>Book Name</th>
+                <th>Author</th>
+                <th>Price</th>
+                <th>Buy</th>
+            </tr>
+            <tr>
+                <td>The Alchemist</td>
+                <td>Paulo Coelho</td>
+                <td>$12</td>
+                <td><button>Buy</button></td>
+            </tr>
+            <tr>
+                <td>Atomic Habits</td>
+                <td>James Clear</td>
+                <td>$15</td>
+                <td><button>Buy</button></td>
+            </tr>
+            <tr>
+                <td>Clean Code</td>
+                <td>Robert C. Martin</td>
+                <td>$20</td>
+                <td><button>Buy</button></td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Order Form -->
+    <section class="order">
+        <h2>Order a Book</h2>
+        <form>
+            <label>Full Name</label>
+            <input type="text" required>
+
+            <label>Email</label>
+            <input type="email" required>
+
+            <label>Select Book</label>
+            <select>
+                <option>The Alchemist</option>
+                <option>Atomic Habits</option>
+                <option>Clean Code</option>
+            </select>
+
+            <label>Quantity</label>
+            <input type="number" min="1" value="1">
+
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+</body>
+</html>
