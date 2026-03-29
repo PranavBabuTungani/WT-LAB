@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Book Catalog Viewer</title>
+  <link rel="stylesheet" href="book_catalog.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Book Catalog</h1>
+  </header>
+
+  <main class="container">
+    <div class="controls">
+      <input id="search" placeholder="Search by title, author, or genre" />
+      <select id="genreFilter"><option value="">All genres</option></select>
+      <button id="refresh">Refresh</button>
+    </div>
+
+    <div id="catalog" class="grid" aria-live="polite"></div>
+  </main>
+
+  <script src="book_catalog.js"></script>
+</body>
+</html>

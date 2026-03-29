@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+    <book id="B001">
+        <title>The Great Gatsby</title>
+        <author>F. Scott Fitzgerald</author>
+        <genre>Fiction</genre>
+        <price currency="USD">10.99</price>
+        <availability status="in-stock">15</availability>
+    </book>
+
+    <book id="B002">
+        <title>A Brief History of Time</title>
+        <author>Stephen Hawking</author>
+        <genre>Science</genre>
+        <price currency="USD">15.50</price>
+        <availability status="in-stock">8</availability>
+    </book>
+
+    <book id="B003">
+        <title>Clean Code</title>
+        <author>Robert C. Martin</author>
+        <genre>Technology</genre>
+        <price currency="USD">32.00</price>
+        <availability status="in-stock">23</availability>
+    </book>
+
+    <book id="B004">
+        <title>To Kill a Mockingbird</title>
+        <author>Harper Lee</author>
+        <genre>Fiction</genre>
+        <price currency="USD">12.99</price>
+        <availability status="out-of-stock">0</availability>
+    </book>
+
+    <book id="B005">
+        <title>Sapiens: A Brief History of Humankind</title>
+        <author>Yuval Noah Harari</author>
+        <genre>History</genre>
+        <price currency="USD">18.75</price>
+        <availability status="in-stock">5</availability>
+    </book>
+</catalog>

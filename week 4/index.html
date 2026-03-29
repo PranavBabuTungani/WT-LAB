@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+    <h1>Book Store</h1>
+    <a href="cart.html">View Cart (<span id="cart-count">0</span>)</a>
+
+    <div id="books">
+        <div class="book">
+        <h3>The Alchemist</h3>
+        <p>By Paulo Coelho</p>
+        <p>Price: Rs. 299</p>
+        <button onclick="addToCart('The Alchemist', 299)">Add to Cart</button>
+    </div>
+
+    <div class="book">
+        <h3>Atomic Habits</h3>
+        
+        <p>By James Clear</p>
+        <p>Price: Rs. 499</p>
+        <button onclick="addToCart('Atomic Habits', 499)">Add to Cart</button>
+    </div>
+
+    <div class="book">
+        <h3>Rich Dad Poor Dad</h3>
+        <p>By Robert Kiyosaki</p>
+        <p>Price: Rs. 349</p>
+        <button onclick="addToCart('Rich Dad Poor Dad', 349)">Add to Cart</button>
+    </div>
+
+    <div class="book">
+        <h3>Deep Work</h3>
+        <p>By Cal Newport</p>
+        <p>Price: Rs. 399</p>
+        <button onclick="addToCart('Deep Work', 399)">Add to Cart</button>
+    </div>
+    </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

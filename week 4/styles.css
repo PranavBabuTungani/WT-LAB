@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f7fb;
+}
+/* Books grid */
+#books{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+}
+
+.book {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(11,37,69,0.06);
+    padding: 16px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.book:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(11,37,69,0.10);
+}
+
+.book h3 { margin: 0; font-size: 1.05rem; color: #071b2d; }
+.book p { margin: 0; color: #475569; font-size: 0.9rem; }
+.book .price { font-weight: 700; color: #111827; }
+
+button {
+    padding: 10px 14px;
+    background-color: #0b74de;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    align-self: start;
+    transition: background-color 120ms ease, transform 120ms ease;
+}
+
+button:hover { background-color: #075fae; transform: translateY(-2px); }
+button:active { transform: translateY(0); }
+
+/* Cart link badge */
+#cart-count {
+    background: #ef4444;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 999px;
+    margin-left: 6px;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+/* Cart page styles */
+#cart-items { margin: 18px 0; }
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(11,37,69,0.04);
+    margin-bottom: 10px;
+}
+
+.cart-item .name { font-weight: 600; }
+.cart-item .price { color: #0b2545; font-weight: 700; }
+
+/* Responsive */
+@media (max-width: 600px) {
+    main { margin: 18px; padding: 12px; }
+    .book { width: 100%; max-width: 420px; }
+}
+
+/* Small utility */
+.muted { color: #6b7280; font-size: 0.9rem; }
+
+/* Style cart list rendered by script.js */
+#cart-items ul { list-style: none; padding: 0; margin: 0; }
+#cart-items ul li {
+    padding: 10px 12px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(11,37,69,0.04);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#cart-items ul li::after { content: attr(data-price); font-weight:700; color:#0b2545; }
